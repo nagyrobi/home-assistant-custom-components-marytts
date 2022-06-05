@@ -78,6 +78,7 @@ tts:
     codec: "WAVE_FILE"
     voice: "cmu-slt-hsmm"
     language: "en_US"
+    delay: 800
     effect:
       Volume: "amount:2.0;"
       TractScaler: "amount:1.5;"
