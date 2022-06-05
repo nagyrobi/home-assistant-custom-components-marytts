@@ -1,6 +1,8 @@
 """Support for the MaryTTS service."""
 from __future__ import annotations
 
+from io import BytesIO
+from pydub import AudioSegment
 from speak2mary import MaryTTS
 import voluptuous as vol
 
