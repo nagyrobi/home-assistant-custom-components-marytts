@@ -94,7 +94,7 @@ class MaryTTSProvider(Provider):
         audiotype = MAP_MARYTTS_CODEC[self._mary.codec]
 
         if self._delay != 0:
-            as_tts = AudioSegment.from_file(BytesIO(data.getvalue()), audiotype)
+            as_tts = AudioSegment.from_file(BytesIO(data), audiotype)
             as_sil = AudioSegment.silent(duration=self._delay, frame_rate=as_tts.frame_rate)
             as_out = as_sil + as_tts
             output=BytesIO()
